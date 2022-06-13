@@ -48,7 +48,7 @@ class _HomeState extends State<Home> {
 
     Timer.periodic(Duration(milliseconds: 50), (timer) {
       time += 0.04;
-      height = -4.9 * time * time + 2.8 * time;
+      height = -4.9 * time * time + 2.2 * time;
 
       setState(() {
         birdYaxis = initialHeight - height;
@@ -56,7 +56,7 @@ class _HomeState extends State<Home> {
           if (barrierXone < -1.1) {
             barrierXone += 2.2;
           } else {
-            barrierXone -= 0.05;
+            barrierXone -= 0.04;
           }
         });
 
